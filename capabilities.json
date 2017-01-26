@@ -1,0 +1,46 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Values",
+            "name": "values",
+            "kind": "GroupingOrMeasure"
+        }
+    ],
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "for": {
+            "in": "values"
+          }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "general": {
+      "displayName": "General",
+      "properties": {
+        "textsize": {
+          "displayName": "Text Size",
+          "description": "Size of the text",
+          "type": {
+            "formatting": { "fontSize": true }
+          }
+        }
+      }
+    },
+    "pagesize": {
+      "displayName": "Page size",
+      "properties": {
+        "numberofrows": {
+          "displayName": "Page size",
+          "description": "The number of rows per page.",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    }
+  }
+}
